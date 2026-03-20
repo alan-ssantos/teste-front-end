@@ -3,3 +3,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  @include container($breakpoints);
+}

@@ -1,0 +1,13 @@
+@mixin container($breakpoints) {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @each $key, $value in $breakpoints {
+    @media (min-width: $value) {
+      max-width: $value;
+    }
+  }
+}
