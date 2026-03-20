@@ -1,34 +1,22 @@
-import "./Header.scss";
+import TopBar from "@/components/top-bar/TopBar";
+import LogoUrl from "@/assets/images/logo.svg?url";
 
 export default function Header() {
   return (
     <>
-      <header>
-        <div>
-          <ul>
-            <li>
-              Compra <strong>100% segura </strong>
-            </li>
-            <li>
-              <span>
-                <strong>Frete grátis</strong> acima de R$ 200
-              </span>
-            </li>
-            <li>
-              <span>
-                <strong>Parcele</strong> suas compras
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <img src="@/assets/images/logo.svg" alt="Econverse" />
+      <TopBar />
+      <header className="header">
+        <div className="container">
+          <a href="">
+            <img src={LogoUrl} alt="Econverse" />
+          </a>
           <div>
             <input type="text" />
             <button>Pesquisar</button>
           </div>
           <div></div>
         </div>
+
         <div>
           <nav>
             <ul>
