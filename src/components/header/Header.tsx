@@ -1,10 +1,36 @@
 import TopBar from "@/components/top-bar/TopBar";
+import TopBarItem from "../top-bar/TopBarItem";
+import ShieldCheckIcon from "@/assets/icons/shield-check.svg";
+import TruckIcon from "@/assets/icons/truck.svg";
+import CreditCardIcon from "@/assets/icons/credit-card.svg";
+
 import LogoUrl from "@/assets/images/logo.svg?url";
 
 export default function Header() {
   return (
     <>
-      <TopBar />
+      <div className="container">
+        <TopBar>
+          <TopBarItem>
+            <ShieldCheckIcon />
+            <span>
+              Compra <strong>100% segura </strong>
+            </span>
+          </TopBarItem>
+          <TopBarItem>
+            <TruckIcon />
+            <span>
+              <strong>Frete grátis</strong> acima de R$ 200
+            </span>
+          </TopBarItem>
+          <TopBarItem>
+            <CreditCardIcon />
+            <span>
+              <strong>Parcele</strong> suas compras
+            </span>
+          </TopBarItem>
+        </TopBar>
+      </div>
       <header className="header">
         <div className="container">
           <a href="">
